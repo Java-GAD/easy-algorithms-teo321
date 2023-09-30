@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 class ProblemOne{
     public static int[] countBits(int n) {
@@ -20,6 +19,13 @@ class ProblemOne{
     }
     public static void main(String[] args) {
 
-        System.out.println(countBits(2));
+        int n=6;
+        int [] array = new int[n+1];
+        array = countBits(n);
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(array[i] + " ");
+        }
+
     }
 }
